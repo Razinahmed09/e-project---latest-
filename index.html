@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Aquaris</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,6 +16,20 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    >
+         
+    </script>
+
+    <script src="./js/slick.min.js"></script>
+
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./style/slick-theme.css" />
+    <link rel="stylesheet" href="./style/slick.css" />
+
     <link rel="stylesheet" href="/style/style.css" />
   </head>
 
@@ -25,7 +39,7 @@
     <nav>
       <input type="checkbox" id="nav-toggle" />
       <div class="logo">
-        <img src="/img/nav logo.png" width="35%" alt="" />
+        <img src="/img/nav logo.png" width="35%" alt />
       </div>
       <ul class="links">
         <li>
@@ -41,13 +55,13 @@
           >
         </li>
         <li>
-          <a href="#about"
+          <a href="#gallary"
             ><i class="fa fa-envelope-o pe-2" aria-hidden="true"></i>
-            <span>Events</span></a
+            <span>Gallary</span></a
           >
         </li>
         <li>
-          <a href="#about"
+          <a href="#ordernow"
             ><i class="fa fa-envelope-o pe-2" aria-hidden="true"></i>
             <span
               ><button data-text="Awesome" class="button">
@@ -76,31 +90,256 @@
     <!-- Home  -->
 
     <section class="sec1-home">
-    <div class="banner-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12"><div class="banner-content">
-            <h1>Oceans Corals <br> and Reptiles.</h1>
-            <p>fish, any of approximately 34,000 species of vertebrate animals (phylum Chordata) found in the fresh and salt waters of the world. Living species range from the primitive jawless lampreys and hagfishes fish, any of approximately 34,000 species of vertebrate animals (phylum Chordata) found in the fresh and salt waters of the world. Living species range from the primitive jawless lampreys and hagfishes</p>
-            <button class="btn-17">
-              <span class="text-container">
-                <span class="text">Shop Now</span>
-              </span>
-            </button>
-            
-          </div></div>
+      <div class="banner-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="banner-content">
+                <h1>
+                  Oceans Corals <br />
+                  and Reptiles.
+                </h1>
+                <p>
+                  fish, any of approximately 34,000 species of vertebrate
+                  animals (phylum Chordata) found in the fresh and salt waters
+                  of the world. Living species range from the primitive jawless
+                  lampreys and hagfishes fish, any of approximately 34,000
+                  species of vertebrate animals (phylum Chordata) found in the
+                  fresh and salt waters of the world. Living species range from
+                  the primitive jawless lampreys and hagfishes
+                </p>
+                <button class="btn-17">
+                  <span class="text-container">
+                    <span class="text">Shop Now</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div></div>
+      </div>
+
+      <marquee direction="right" width="100%" height="150px" class="marque">
+        <div class="nametag d-flex align-items-center">
+          <h2>AQUARIS</h2>
+          <hr />
+        </div>
+      </marquee>
     </section>
 
-    <section class="sec2-about">
-      <div class="heading"><h2>About</h2></div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div>
+    <section class="About">
+      <div class="sec2-about">
+        <div class="about-bg">
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-sm-2">
+                <img src="/img/col-1.jpg" width="100%" height="275px" alt />
+              </div>
+
+              <div class="col-sm-2">
+                <img src="/img/col2.jpg" width="100%" height="275px" />
+              </div>
+              <div class="col-sm-2">
+                <img
+                  src="/img/pexels-guillaume-meurice-3721300.jpg"
+                  height="275px"
+                  width="100%"
+                  alt
+                />
+              </div>
+              <div class="col-sm-2">
+                <img
+                  src="/img/pexels-los-muertos-crew-8837898.jpg"
+                  height="275px"
+                  width="100%"
+                  alt
+                />
+              </div>
+              <div class="col-sm-2">
+                <img
+                  src="/img/pexels-vova-kras-2599869.jpg"
+                  width="100%"
+                  height="275px"
+                  alt
+                />
+              </div>
+              <div class="col-sm-2">
+                <img src="/img/col-6.jpg" width="100%" alt height="275px" />
+              </div>
+
+              <marquee
+                direction="left"
+                width="60%"
+                height="150px"
+                class="marque"
+              >
+                <h1>All Species of Marine Fish Book Online Now</h1>
+                <img src="/img/fish icon.png" height="100px" alt="" />
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutcards">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="cardimg">
+                <img
+                  src="/img/pexels-chevanon-photography-325044.jpg"
+                  width="100%"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card-content">
+                <h2>Betta Fish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="card-content">
+                <h2>JellyFish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cardimg">
+                <img src="/img/card-2.jpg" width="100%" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="cardimg">
+                <img src="/img/card-3.jpg" width="100%" alt="" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card-content">
+                <h2>Perch Fish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="sec3-gallery">
+      <div class="gallery-bg">
+        <div class="container">
+          <div class="row">
+            <h2>Welcome to Our Fish Gallery</h2>
+            <div class="col-sm-4 pt-5">
+              <h3>Freshwater Beauties</h3>
+              <p>
+                Discover the mesmerizing colors and patterns of freshwater fish.
+                From the iconic Betta splendens (Siamese fighting fish) to the
+                graceful movements of angelfish, our gallery celebrates the
+                unique charm of freshwater species graceful movements of
+                angelfish, our gallery celebrates the unique charm of freshwater
+                species.
+              </p>
+            </div>
+            <div class="col-sm-4 pt-5">
+              <h3>Saltwater Wonders</h3>
+              <p>
+                Dive into the enchanting world of saltwater fish. Witness the
+                brilliant hues of clownfish, the majesty of lionfish, and the
+                graceful dance of seahorses. Our gallery captures the allure of
+                the ocean's most magnificent inhabitants graceful dance of
+                seahorses. Our gallery captures the allure of the ocean's most
+                magnificent inhabitants.
+              </p>
+            </div>
+            <div class="col-sm-4 pt-5">
+              <h3>Aquarium Showpieces</h3>
+              <p>
+                For aquarium enthusiasts, our gallery showcases stunning
+                aquarium setups, featuring a harmonious blend of fish, plants,
+                and decor. Get inspired by these aquatic masterpieces and gather
+                ideas for your own aquatic haven and decor. Get inspired by
+                these aquatic masterpieces and gather ideas for your own aquatic
+                haven.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row slider22">
+          <div class="slide">
+            <div class="slider">
+              <img src="img/pexels-vova-kras-2698871.jpg" width="100%" alt="" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slider">
+              <img
+                src="img/pexels-guillaume-meurice-1894351.jpg"
+                width="100%"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slider">
+              <img src="img/betta-7.jpg" width="100%" alt="" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slider">
+              <img src="img/pexels-photo-7573628.jpeg"  width="100%"  alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-bg">
+
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
