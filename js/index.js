@@ -4,10 +4,11 @@ $( document ).ready(function() {
         dots: false,
         infinite: true,
         speed: 150,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows:false,
         autoplay: true,
+        dots:false,
         responsive: [
           {
             breakpoint: 1024,
@@ -39,3 +40,5 @@ $( document ).ready(function() {
       });
 
 });
+
+

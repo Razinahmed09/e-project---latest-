@@ -42,22 +42,20 @@
     <nav>
       <input type="checkbox" id="nav-toggle" />
       <div class="logo">
-        <img src="/img/nav logo.png" width="35%" alt />
+        <img src="/img/LOGO.png" width="30%" alt />
       </div>
       <ul class="links">
         <li>
-          <a href="#home"
-            ><i class="" aria-hidden="true"></i> <span>Home</span></a
-          >
+          <a href="#home"><i class aria-hidden="true"></i> <span>Home</span></a>
         </li>
         <li>
           <a href="#about"
-            ><i class="" aria-hidden="true"></i> <span>About</span></a
+            ><i class aria-hidden="true"></i> <span>About</span></a
           >
         </li>
         <li>
           <a href="#gallery"
-            ><i class="" aria-hidden="true"></i> <span>Gallery</span></a
+            ><i class aria-hidden="true"></i> <span>Gallery</span></a
           >
         </li>
         <li>
@@ -67,8 +65,8 @@
           >
         </li>
         <li>
-          <a href="#ordernow"
-            ><i class="" aria-hidden="true"></i>
+          <a href="#ordernow" data-bs-toggle="modal" data-bs-target="#modalId"
+            ><i class aria-hidden="true"></i>
             <span
               ><button data-text="Awesome" class="button">
                 <span class="actual-text">&nbsp;ordernow&nbsp;</span>
@@ -93,6 +91,8 @@
       <div class="line"></div>
     </label>
 
+    <!-- modal -->
+
     <!-- Home  -->
 
     <section class="sec1-home" id="home">
@@ -104,7 +104,7 @@
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <div class="col-xl-12">
+            <div class="col-xl-8">
               <div class="banner-content">
                 <h1>
                   Oceans Corals <br />
@@ -130,7 +130,7 @@
         </div>
       </div>
 
-      <marquee direction="right" width="100%" height="150px" class="marque">
+      <marquee direction="right" width="100%" height="120px" class="marque">
         <div class="nametag d-flex align-items-center">
           <h2>AQUARIS</h2>
           <hr />
@@ -192,7 +192,7 @@
                 class="marque"
               >
                 <h1>All Species of Marine Fish Book Online Now</h1>
-                <img src="/img/fish icon.png" height="100px" alt="" />
+                <img src="/img/fish icon.png" height="100px" alt />
               </marquee>
             </div>
           </div>
@@ -200,15 +200,18 @@
       </div>
       <div class="aboutcards">
         <div class="container">
-          <div class="row"  data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
-            <div class="col-6" >
+          <div
+            class="row"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="col-6">
               <div class="cardimg">
                 <img
                   src="/img/pexels-chevanon-photography-325044.jpg"
                   width="100%"
-                  alt=""
+                  alt
                 />
               </div>
             </div>
@@ -230,9 +233,12 @@
               </div>
             </div>
           </div>
-          <div class="row"  data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
+          <div
+            class="row"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="col-6">
               <div class="card-content">
                 <h2>JellyFish</h2>
@@ -251,17 +257,20 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="cardimg">
-                <img src="/img/card-2.jpg" width="100%" alt="" />
+              <div class="cardimg text-center">
+                <img src="/img/card-2.jpg" width="100%" alt />
               </div>
             </div>
           </div>
-          <div class="row"  data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500">
+          <div
+            class="row"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <div class="col-6 mb-4">
               <div class="cardimg">
-                <img src="/img/card-3.jpg" width="100%" alt="" />
+                <img src="/img/card-3.jpg" width="100%" alt />
               </div>
             </div>
             <div class="col-6">
@@ -297,7 +306,7 @@
             data-aos-duration="1500"
           >
             <h2>Welcome to Our Fish Gallery</h2>
-            <div class="col-sm-4 pt-5">
+            <div class="col-sm-4 ">
               <h3>Freshwater Beauties</h3>
               <p>
                 Discover the mesmerizing colors and patterns of freshwater fish.
@@ -308,7 +317,7 @@
                 species.
               </p>
             </div>
-            <div class="col-sm-4 pt-5">
+            <div class="col-sm-4 ">
               <h3>Saltwater Wonders</h3>
               <p>
                 Dive into the enchanting world of saltwater fish. Witness the
@@ -319,7 +328,7 @@
                 magnificent inhabitants.
               </p>
             </div>
-            <div class="col-sm-4 pt-5">
+            <div class="col-sm-4 ">
               <h3>Aquarium Showpieces</h3>
               <p>
                 For aquarium enthusiasts, our gallery showcases stunning
@@ -333,43 +342,49 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid"  data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
+      <div
+        class="container-fluid"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div class="row slider22">
           <div class="slide">
             <div class="slider">
-              <img
-                src="img/pexels-vova-kras-2698871.jpg"
-                width="100%"
-                height="800px"
-                alt=""
-              />
+              <img src="img/pexels-vova-kras-2698871.jpg" width="80%" alt />
             </div>
           </div>
           <div class="slide">
             <div class="slider">
               <img
                 src="img/pexels-guillaume-meurice-1894351.jpg"
-                width="100%"
-                height="800px"
-                alt=""
+                width="80%"
+                alt
               />
             </div>
           </div>
           <div class="slide">
             <div class="slider">
-              <img src="img/betta-7.jpg" width="100%" height="800px" alt="" />
+              <img src="img/betta-7.jpg" width="80%" alt />
             </div>
           </div>
           <div class="slide">
             <div class="slider">
               <img
-                src="img/pexels-photo-7573628.jpeg"
-                width="100%"
-                height="800px"
-                alt=""
+                src="img/pexels-guillaume-meurice-3721300.jpg"
+                width="80%"
+                alt
               />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slider">
+              <img src="img/pexels-vova-kras-2599869.jpg" width="80%" alt />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slider">
+              <img src="img/slide-5.jpg" width="80%" alt />
             </div>
           </div>
         </div>
@@ -379,9 +394,12 @@
     <!-- Contact us -->
 
     <section class="sec4-contactus" id="Contact-Us">
-      <div class="container"  data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
+      <div
+        class="container"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div><h2>Contact Us</h2></div>
         <div class="row">
           <div class="col-xl-12">
@@ -448,13 +466,82 @@
     </section>
 
     <div class="sec1-home">
-      <marquee direction="right" width="100%" height="150px" class="marque">
+      <marquee direction="right" width="100%" height="120px" class="marque">
         <div class="nametag d-flex align-items-center">
           <h2>AQUARIS</h2>
           <hr />
         </div>
       </marquee>
     </div>
+
+    <section id="ordernow" >
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div class="container">
+        <div class="row">
+          <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="text-center">
+                    <h2>Confirm Your Order</h2>
+                  </div>
+                  <div class="container mt-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-sm-6">
+                        <div>
+                          <img src="img/betta-7.jpg" height="400px" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select Your Order</option>
+                          <option value="1">Gellyfish</option>
+                          <option value="2">Bettafish</option>
+                          <option value="3">Goldfish</option>
+                          <option value="3">Viperfish</option>
+                          <option value="3">Starfish</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                  <button class="btn-17 mb-5" data-bs-dismiss="modal">
+                    <span class="text-container">
+                      <span class="text">Submit</span>
+                    </span>
+                  </button>
+                  <button class="btn-17 mb-5 mx-3" data-bs-dismiss="modal">
+                    <span class="text-container">
+                      <span class="text">Close</span>
+                    </span>
+                  </button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Optional: Place to the bottom of scripts -->
+    </section>
 
     <!-- footer -->
 
@@ -503,7 +590,7 @@
                       stroke-linecap="butt"
                       stroke-linejoin="miter"
                       stroke-miterlimit="10"
-                      stroke-dasharray=""
+                      stroke-dasharray
                       stroke-dashoffset="0"
                       font-family="none"
                       font-weight="none"
