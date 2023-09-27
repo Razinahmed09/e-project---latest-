@@ -386,7 +386,7 @@ nav .icon-burger .line {
 }
 
 .sec2-about .about-bg img:hover {
-  height: 320px;
+  transform: scale(1.2);
   cursor: pointer;
   padding-top: 5%;
 }
@@ -655,10 +655,12 @@ footer hr {
 
 .modal h2{
   font-weight: bolder;
+  font-size: 50px;
+  color: #000;
 }
 
 .modal-content {
-  background-color: rgba(9, 176, 232, 0.891);
+  background-color: rgba(186, 188, 189, 0.891);
   border-radius: 20px;
 }
 
