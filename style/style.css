@@ -195,6 +195,9 @@ nav .icon-burger .line {
   background-size: cover;
 }
 
+.sec1-home .banner-bg .container{
+  padding-top: 10%;
+}
 .sec1-home .banner-content h1 {
   color: rgb(255, 255, 255);
   font-size: 80px;
@@ -207,8 +210,9 @@ nav .icon-burger .line {
 
 .sec1-home .row {
   display: flex;
-  height: 70vh;
+  height: auto;
   align-items: center;
+  padding-bottom: 10%;
 }
 
 .btn-17,
