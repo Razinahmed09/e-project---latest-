@@ -11,12 +11,13 @@ var swiper = new Swiper(".mySwiper", {
     modifier: 1,
     slideShadows: true,
     loop: true,
-
+    
   },
   autoplay: {
     delay: 2000,
   },
     pagination: {
     el: ".swiper-pagination",
+    clickable:false
     },
   });

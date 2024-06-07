@@ -1,13 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600;700&family=Kanit:ital,wght@0,200;0,400;0,500;1,900&family=Lato:wght@100&family=Montserrat:wght@400;500;700;800&family=Open+Sans&family=Poppins:wght@800&family=Roboto:wght@300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600;700&family=Kanit:ital,wght@0,200;0,400;0,500;1,900&family=Lato:wght@100&family=Montserrat:wght@400;500;700;800&family=Open+Sans&family=Poppins:wght@800&family=Roboto:wght@300&display=swap"); */
 
 body {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   color: #fff;
   line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background: black;
+}
+
+
+
+@font-face {
+  font-family:RailwayBold;
+  src: url("../fonts/raleway.bold.ttf");
+}
+@font-face {
+  font-family:RailwaySemi ;
+  src: url("../fonts/raleway.semibold.ttf");
+}
+@font-face {
+  font-family:RailwayLight ;
+  src: url("../fonts/raleway.light.ttf");
+}
+@font-face {
+  font-family:RailwayMedium ;
+  src: url("../fonts/raleway.medium.ttf");
 }
 
 h1,
@@ -16,10 +34,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
+  font-family: RailwayBold;
+  /* font-weight: bolder; */
 }
 
+p{
+  font-family: RailwayMedium;
+}
+span {
+  font-family: RailwayLight;
+}
 
 body::-webkit-scrollbar {
   width: 10px;
@@ -509,6 +533,9 @@ nav .icon-burger .line {
   display: block;
   width: 100%;
 }
+.swiper-pagination {
+  display: none !important;
+}
 
 .sec-slider {
   padding: 3rem 0;
@@ -616,8 +643,8 @@ footer hr {
 }
 
 .twitter {
-  margin-top: 1.5em;
-  margin-left: -0.9em;
+  margin-top: 2.7em;
+  margin-left: 0.1em;
   fill: #03a9f4;
 }
 
