@@ -1,512 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Aquaris</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Aquaris</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+  <body>
+    <!-- place navbar here -->
 
-<body>
-  <!-- place navbar here -->
+    <nav>
+      <input type="checkbox" id="nav-toggle" />
+      <div class="logo">
+        <a href="#home"> <img src="/img/LOGO.png" width="30%" alt /></a>
+      </div>
+      <ul class="links">
+        <li>
+          <a href="#home"><i class aria-hidden="true"></i> <span>Home</span></a>
+        </li>
+        <li>
+          <a href="#about"
+            ><i class aria-hidden="true"></i> <span>About</span></a
+          >
+        </li>
+        <li>
+          <a href="#gallery"
+            ><i class aria-hidden="true"></i> <span>Gallery</span></a
+          >
+        </li>
+        <li>
+          <a href="#Contact-Us"
+            ><i class="fa fa-phone pe-2" aria-hidden="true"></i>
+            <span>Contact Us</span></a
+          >
+        </li>
+        <li>
+          <a href="#ordernow" data-bs-toggle="modal" data-bs-target="#modalId"
+            ><i class aria-hidden="true"></i>
+            <span
+              ><button data-text="Awesome" class="button">
+                <span class="actual-text">&nbsp;ordernow&nbsp;</span>
+                <span class="hover-text" aria-hidden="true"
+                  >&nbsp;ordernow&nbsp;</span
+                >
+              </button></span
+            ></a
+          >
+        </li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
 
-  <nav>
-    <input type="checkbox" id="nav-toggle" />
-    <div class="logo"><a href="">
-        <img src="/img/LOGO.png" width="30%" alt /></a>
-    </div>
-    <ul class="links">
-      <li>
-        <a href="#home"><i class aria-hidden="true"></i> <span>Home</span></a>
-      </li>
-      <li>
-        <a href="#about"><i class aria-hidden="true"></i> <span>About</span></a>
-      </li>
-      <li>
-        <a href="#gallery"><i class aria-hidden="true"></i> <span>Gallery</span></a>
-      </li>
-      <li>
-        <a href="#Contact-Us"><i class="fa fa-phone pe-2" aria-hidden="true"></i>
-          <span>Contact Us</span></a>
-      </li>
-      <li>
-        <a href="#ordernow" data-bs-toggle="modal" data-bs-target="#modalId"><i class aria-hidden="true"></i>
-          <span><button data-text="Awesome" class="button">
-              <span class="actual-text">&nbsp;ordernow&nbsp;</span>
-              <span class="hover-text" aria-hidden="true">&nbsp;ordernow&nbsp;</span>
-            </button></span></a>
-      </li>
-    </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
     </label>
-  </nav>
 
-  <label for="nav-toggle" class="icon-burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </label>
+    <!-- modal -->
 
-  <!-- modal -->
+    <!-- Home  -->
 
-  <!-- Home  -->
-
-  <section class="sec1-home" id="home">
-    <div class="banner-bg">
-      <div class="container">
-        <div class="row" >
-          <div class="col-sm-12 col-md-12 col-xl-8">
-            <div class="banner-content">
-              <h1>
-                Oceans Corals <br />
-                and Reptiles
-              </h1>
-              <p>
-                fish, any of approximately 34,000 species of vertebrate
-                animals (phylum Chordata) found in the fresh and salt waters
-                of the world. Living species range from the primitive jawless
-                lampreys and hagfishes fish, any of approximately 34,000
-                species of vertebrate animals (phylum Chordata) found in the
-                fresh and salt waters of the world. Living species range from
-                the primitive jawless lampreys and hagfishes
-              </p>
-              <div class="mt-5">
-                <button class="btn-17" data-bs-toggle="modal" data-bs-target="#modalId">
-                  <span class="text-container">
-                    <span class="text" >Shop Now</span>
-                  </span>
-                </button>
-
-                <button class="btn-17 mx-2">
-                  <span class="text-container">
-                    <span class="text"><i class="fa fa-phone pe-2" aria-hidden="true"></i>+9211200007</span>
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <marquee direction="right" width="100%" height="120px" class="marque">
-      <div class="nametag d-flex align-items-center">
-        <h2>AQUARIS</h2>
-        <hr />
-      </div>
-    </marquee>
-  </section>
-
-  <!-- About -->
-
-  <section class="About" id="about">
-    <div class="sec2-about">
-      <div class="about-bg">
+    <section class="sec1-home" id="home">
+      <div class="banner-bg">
         <div class="container">
-          <div class="row mt-5" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-            <div class="col-sm-12 col-xl-2">
-              <img src="/img/col-1.jpg"  alt="fish-img" />
-            </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-xl-8">
+              <div class="banner-content">
+                <h1>
+                  Oceans Corals <br />
+                  and Reptiles
+                </h1>
+                <p>
+                  fish, any of approximately 34,000 species of vertebrate
+                  animals (phylum Chordata) found in the fresh and salt waters
+                  of the world. Living species range from the primitive jawless
+                  lampreys and hagfishes fish, any of approximately 34,000
+                  species of vertebrate animals (phylum Chordata) found in the
+                  fresh and salt waters of the world. Living species range from
+                  the primitive jawless lampreys and hagfishes
+                </p>
+                <div class="mt-5">
+                  <button
+                    class="btn-17"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalId"
+                  >
+                    <span class="text-container">
+                      <span class="text">Shop Now</span>
+                    </span>
+                  </button>
 
-            <div class="col-sm-12 col-xl-2">
-              <a href=""><img src="/img/col2.jpg"  /></a>
-            </div>
-            <div class="col-sm-12 col-xl-2">
-              <img src="/img/pexels-guillaume-meurice-3721300.jpg"  alt="fish-img" />
-            </div>
-            <div class="col-sm-12 col-xl-2">
-              <img src="/img/pexels-los-muertos-crew-8837898.jpg"  alt="fish-img" />
-            </div>
-            <div class="col-sm-12 col-xl-2">
-              <img src="/img/pexels-vova-kras-2599869.jpg"  alt="fish-img" />
-            </div>
-            <div class="col-sm-12 col-xl-2">
-              <img src="/img/col-6.jpg" alt="fish-img" />
-            </div>
-
-            <marquee direction="left" width="60%" height="150px" class="marque">
-              <h1>All Species of Marine Fish Book Online Now</h1>
-              <img src="/img/fish icon.png"  alt="fish-img" />
-            </marquee>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="aboutcards">
-      <div class="container">
-        <div class="row" >
-          <div class="col-6">
-            <div class="cardimg">
-              <img src="/img/pexels-chevanon-photography-325044.jpg" width="100%" alt />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card-content">
-              <h2>Betta Fish</h2>
-              <p>
-                The term fish is applied to a variety of vertebrates of
-                several evolutionary lines. It describes a life-form rather
-                than a taxonomic group. As members of the phylum Chordata,
-                fish share certain features with other vertebrates. These
-                features are gill slits at some point in the life cycle, a
-                notochord, or skeletal supporting rod, a dorsal hollow nerve
-                cord, and a tail. Living fishes represent some five classes,
-                which are as distinct from one another as are the four classes
-                of familiar air-breathing animals—amphibians, reptiles, birds,
-                and mammals.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-6">
-            <div class="card-content">
-              <h2>JellyFish</h2>
-              <p>
-                The term fish is applied to a variety of vertebrates of
-                several evolutionary lines. It describes a life-form rather
-                than a taxonomic group. As members of the phylum Chordata,
-                fish share certain features with other vertebrates. These
-                features are gill slits at some point in the life cycle, a
-                notochord, or skeletal supporting rod, a dorsal hollow nerve
-                cord, and a tail. Living fishes represent some five classes,
-                which are as distinct from one another as are the four classes
-                of familiar air-breathing animals—amphibians, reptiles, birds,
-                and mammals.
-              </p>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="cardimg text-center">
-              <img src="/img/card-2.jpg" width="100%" alt />
-            </div>
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-6 mb-4">
-            <div class="cardimg">
-              <img src="/img/card-3.jpg" width="100%" alt />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card-content">
-              <h2>Perch Fish</h2>
-              <p>
-                The term fish is applied to a variety of vertebrates of
-                several evolutionary lines. It describes a life-form rather
-                than a taxonomic group. As members of the phylum Chordata,
-                fish share certain features with other vertebrates. These
-                features are gill slits at some point in the life cycle, a
-                notochord, or skeletal supporting rod, a dorsal hollow nerve
-                cord, and a tail. Living fishes represent some five classes,
-                which are as distinct from one another as are the four classes
-                of familiar air-breathing animals—amphibians, reptiles, birds,
-                and mammals.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="sec3-gallery" id="gallery">
-    <div class="gallery-bg">
-      <div class="container">
-        <div class="row" >
-          <h2>Welcome to Our Fish Gallery</h2>
-          <div class="col-sm-4 ">
-            <h3>Freshwater Beauties</h3>
-            <p>
-              Discover the mesmerizing colors and patterns of freshwater fish.
-              From the iconic Betta splendens (Siamese fighting fish) to the
-              graceful movements of angelfish, our gallery celebrates the
-              unique charm of freshwater species graceful movements of
-              angelfish, our gallery celebrates the unique charm of freshwater
-              species.
-            </p>
-          </div>
-          <div class="col-sm-4 ">
-            <h3>Saltwater Wonders</h3>
-            <p>
-              Dive into the enchanting world of saltwater fish. Witness the
-              brilliant hues of clownfish, the majesty of lionfish, and the
-              graceful dance of seahorses. Our gallery captures the allure of
-              the ocean's most magnificent inhabitants graceful dance of
-              seahorses. Our gallery captures the allure of the ocean's most
-              magnificent inhabitants.
-            </p>
-          </div>
-          <div class="col-sm-4 ">
-            <h3>Aquarium Showpieces</h3>
-            <p>
-              For aquarium enthusiasts, our gallery showcases stunning
-              aquarium setups, featuring a harmonious blend of fish, plants,
-              and decor. Get inspired by these aquatic masterpieces and gather
-              ideas for your own aquatic haven and decor. Get inspired by
-              these aquatic masterpieces and gather ideas for your own aquatic
-              haven.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="sec-slider">
-    <div class="container">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./img/slide-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/betta-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/pexels-photo-7573628.jpeg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/slide.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/pexels-vova-kras-2599869.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/gelly.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="./img/col-1.jpg" />
-        </div>
-        
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="d-flex justify-content-center pt-2 pb-2">
-      <button class="btn-17" data-bs-toggle="modal" data-bs-target="#modalId">
-        <span class="text-container">
-          <span class="text" >Order Now</span>
-        </span>
-      </button>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Contact us -->
-
-  <section class="sec4-contactus" id="Contact-Us">
-    <div class="container" >
-      <div>
-        <h2>Contact Us</h2>
-      </div>
-      <div class="row">
-        <div class="col-xl-6">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-              <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
+                  <button class="btn-17 mx-2">
+                    <span class="text-container">
+                      <span class="text"
+                        ><i class="fa fa-phone pe-2" aria-hidden="true"></i
+                        >+9211200007</span
+                      >
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <select class="form-select mt-4 bg-black" aria-label="Default select example" style="color: white">
-              <option selected>Select Menu</option>
-              <option value="1">BettaFish</option>
-              <option value="2">GellyFish</option>
-              <option value="3">PerchFish</option>
-            </select>
-            <div class="mb-3 form-check mt-3">
-              <input type="checkbox" class="form-check-input bg-black" id="exampleCheck1" />
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
-          </form>
-        </div>
-        <div class="col-xl-6"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.940882662741!2d-111.90547230958059!3d40.76332496070273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f5030b94876f%3A0x2126a9ea157d6eea!2sAquarius%20Fish%20Co!5e0!3m2!1sen!2s!4v1695837154870!5m2!1sen!2s"
-            width="600" height="450" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="sec1-home">
-    <marquee direction="right" width="100%" height="120px" class="marque">
-      <div class="nametag d-flex align-items-center">
-        <h2>AQUARIS</h2>
-        <hr />
-      </div>
-    </marquee>
-  </div>
-
-  <section id="ordernow">
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="container">
-      <div class="row">
-        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-          role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <div class="text-center">
-                  <h2>Confirm Your Order</h2>
-                </div>
-                <div class="container mt-5">
-                  <div class="row d-flex align-items-center">
-                    <div class="col-sm-6">
-                      <div>
-                        <img src="img/betta-7.jpg" height="400px" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>Select Your Order</option>
-                        <option value="1">Gellyfish</option>
-                        <option value="2">Bettafish</option>
-                        <option value="3">Goldfish</option>
-                        <option value="3">Viperfish</option>
-                        <option value="3">Starfish</option>
-                      </select>
-                    </div>
+            <div class="col-xl-4">
+              <div>
+                <div class="cube-loader">
+                  <div class="cube-top"></div>
+                  <div class="cube-wrapper">
+                    <span class="cube-span" style="--i:0"></span>
+                    <span class="cube-span" style="--i:1"></span>
+                    <span class="cube-span" style="--i:2"></span>
+                    <span class="cube-span" style="--i:3"></span>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="d-flex justify-content-center align-items-center mt-4">
-                <button class="btn-17 mb-5" data-bs-dismiss="modal">
-                  <span class="text-container">
-                    <span class="text">Submit</span>
-                  </span>
-                </button>
-                <button class="btn-17 mb-5 mx-3" data-bs-dismiss="modal">
-                  <span class="text-container">
-                    <span class="text">Close</span>
-                  </span>
-                </button>
+      <marquee direction="right" width="100%" height="120px" class="marque">
+        <div class="nametag d-flex align-items-center">
+          <h2>AQUARIS</h2>
+          <hr />
+        </div>
+      </marquee>
+    </section>
 
+    <!-- About -->
+
+    <section class="About" id="about">
+      <div class="sec2-about">
+        <div class="about-bg">
+          <div class="container">
+            <div
+              class="row mt-5"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              <div class="col-sm-12 col-xl-2">
+                <img src="/img/col-1.jpg" alt="fish-img" />
+              </div>
+
+              <div class="col-sm-12 col-xl-2">
+                <a href=""><img src="/img/col2.jpg" /></a>
+              </div>
+              <div class="col-sm-12 col-xl-2">
+                <img
+                  src="/img/pexels-guillaume-meurice-3721300.jpg"
+                  alt="fish-img"
+                />
+              </div>
+              <div class="col-sm-12 col-xl-2">
+                <img
+                  src="/img/pexels-los-muertos-crew-8837898.jpg"
+                  alt="fish-img"
+                />
+              </div>
+              <div class="col-sm-12 col-xl-2">
+                <img src="/img/pexels-vova-kras-2599869.jpg" alt="fish-img" />
+              </div>
+              <div class="col-sm-12 col-xl-2">
+                <img src="/img/col-6.jpg" alt="fish-img" />
+              </div>
+
+              <marquee
+                direction="left"
+                width="60%"
+                height="150px"
+                class="marque"
+              >
+                <h1>All Species of Marine Fish Book Online Now</h1>
+                <img src="/img/fish icon.png" alt="fish-img" />
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutcards">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="cardimg">
+                <img
+                  src="/img/pexels-chevanon-photography-325044.jpg"
+                  width="100%"
+                  alt
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card-content">
+                <h2>Betta Fish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="card-content">
+                <h2>JellyFish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cardimg text-center">
+                <img src="/img/card-2.jpg" width="100%" alt />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 mb-4">
+              <div class="cardimg">
+                <img src="/img/card-3.jpg" width="100%" alt />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="card-content">
+                <h2>Perch Fish</h2>
+                <p>
+                  The term fish is applied to a variety of vertebrates of
+                  several evolutionary lines. It describes a life-form rather
+                  than a taxonomic group. As members of the phylum Chordata,
+                  fish share certain features with other vertebrates. These
+                  features are gill slits at some point in the life cycle, a
+                  notochord, or skeletal supporting rod, a dorsal hollow nerve
+                  cord, and a tail. Living fishes represent some five classes,
+                  which are as distinct from one another as are the four classes
+                  of familiar air-breathing animals—amphibians, reptiles, birds,
+                  and mammals.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Optional: Place to the bottom of scripts -->
-  </section>
+    </section>
 
-  <!-- footer -->
-
-  <footer>
-    <div class="footer-bg">
-      <div class="container">
-        <div >
-          <h2>AQUARIS.</h2>
-          <div class="row">
-            <div class="col-xl-12 text-center">
-              <p>
-                Siamese fighting fish are endemic to the central plain of
-                Thailand, where they were first domesticated at least 1,000
-                years ago, among the longest of any fish.[6][7][8] They were
-                initially bred for aggression and subject to gambling matches
-                akin to cockfighting Siamese fighting fish are endemic to the
-                central plain of Thailand, where they were first domesticated
-                at least 1,000 years ago, among the longest of any
-                fish.[6][7][8] They were initially bred for aggression and
-                subject to gambling matches akin to cockfighting.
-              </p>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-center py-5">
+          <div class="loading">
+            <svg width="60px" height="50px">
+                <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+              <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+            </svg>
           </div>
-          <div class="main pt-5 d-flex justify-content-center align-items-center">
-            <div class="up">
-              <button class="card1">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
-                  width="30px" height="30px" fill-rule="nonzero" class="instagram">
-                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                    stroke-miterlimit="10" stroke-dasharray stroke-dashoffset="0" font-family="none" font-weight="none"
-                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                    <g transform="scale(8,8)">
-                      <path
-                        d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
-                      </path>
-                    </g>
-                  </g>
-                </svg>
-              </button>
-              <a href="https://www.linkedin.com/in/razin-ahmed-a365a5255/">
-              <button class="card2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="50px" height="50px" class="twitter">
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                </svg>
-              </button>
-            </a>
-            </div>
-            <div class="down">
-              <button class="card3">
-                <a href="https://github.com/Razinahmed09">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" class="github">
-                  <path
-                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
-                  </path>
-                </svg>
-              </a>
-              </button>
-              <button class="card4">
-                <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="discord">
-                  <path
-                    d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z">
-                  </path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <hr />
-          <div class="d-flex align-items-center justify-content-between">
-            Copyright @2023 Aquaris
-            <div>Contact No +92112560696</div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
-  </footer>
 
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-  <!-- <script>
+    <!-- Gallery -->
+    <section class="sec3-gallery" id="gallery">
+      <div class="gallery-bg">
+        <div class="container">
+          <div class="row">
+            <h2>Welcome to Our Fish Gallery</h2>
+            <div class="col-sm-4">
+              <h3>Freshwater Beauties</h3>
+              <p>
+                Discover the mesmerizing colors and patterns of freshwater fish.
+                From the iconic Betta splendens (Siamese fighting fish) to the
+                graceful movements of angelfish, our gallery celebrates the
+                unique charm of freshwater species graceful movements of
+                angelfish, our gallery celebrates the unique charm of freshwater
+                species.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Saltwater Wonders</h3>
+              <p>
+                Dive into the enchanting world of saltwater fish. Witness the
+                brilliant hues of clownfish, the majesty of lionfish, and the
+                graceful dance of seahorses. Our gallery captures the allure of
+                the ocean's most magnificent inhabitants graceful dance of
+                seahorses. Our gallery captures the allure of the ocean's most
+                magnificent inhabitants.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Aquarium Showpieces</h3>
+              <p>
+                For aquarium enthusiasts, our gallery showcases stunning
+                aquarium setups, featuring a harmonious blend of fish, plants,
+                and decor. Get inspired by these aquatic masterpieces and gather
+                ideas for your own aquatic haven and decor. Get inspired by
+                these aquatic masterpieces and gather ideas for your own aquatic
+                haven.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-slider">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/slide-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/betta-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/pexels-photo-7573628.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/slide.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/pexels-vova-kras-2599869.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/gelly.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/col-1.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="d-flex justify-content-center pt-2 pb-2">
+            <button
+              class="btn-17"
+              data-bs-toggle="modal"
+              data-bs-target="#modalId"
+            >
+              <span class="text-container">
+                <span class="text">Order Now</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+
+    <section class="sec4-contactus" id="Contact-Us">
+      <div class="container">
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+          <div class="col-xl-6">
+            <!-- <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <select
+                class="form-select mt-4 bg-black"
+                aria-label="Default select example"
+                style="color: white"
+              >
+                <option selected>Select Menu</option>
+                <option value="1">BettaFish</option>
+                <option value="2">GellyFish</option>
+                <option value="3">PerchFish</option>
+              </select>
+              <div class="mb-3 form-check mt-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input bg-black"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form> -->
+            <div class="form-container">
+              <form class="form">
+                <div class="form-group">
+                  <label for="email"> Full Name</label>
+                  <input required="" name="text" id="email" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email"> Email</label>
+                  <input required="" name="email"  type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email"> Select Fish</label>
+                  <select id="email">
+
+                <option selected></option>
+                <option value="1">BettaFish</option>
+                <option value="2">GellyFish</option>
+                <option value="3">PerchFish</option>
+              </select>
+                </div>
+                <div class="form-group">
+                  <label for="textarea">How Can We Help You?</label>
+                  <textarea required="" cols="50" rows="10" id="textarea" name="textarea"> </textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                <button type="submit" class="form-submit-btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          
+          
+          </div>
+          <div class="col-xl-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.940882662741!2d-111.90547230958059!3d40.76332496070273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f5030b94876f%3A0x2126a9ea157d6eea!2sAquarius%20Fish%20Co!5e0!3m2!1sen!2s!4v1695837154870!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0; border-radius: 20px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sec1-home">
+      <marquee direction="right" width="100%" height="120px" class="marque">
+        <div class="nametag d-flex align-items-center">
+          <h2>AQUARIS</h2>
+          <hr />
+        </div>
+      </marquee>
+    </div>
+
+    <section id="ordernow">
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div class="container">
+        <div class="row">
+          <div
+            class="modal fade"
+            id="modalId"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="text-center">
+                    <h2>Confirm Your Order</h2>
+                  </div>
+                  <div class="container mt-5">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-sm-6">
+                        <div>
+                          <img src="img/betta-7.jpg" height="400px" alt="" />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select Your Order</option>
+                          <option value="1">Gellyfish</option>
+                          <option value="2">Bettafish</option>
+                          <option value="3">Goldfish</option>
+                          <option value="3">Viperfish</option>
+                          <option value="3">Starfish</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-center align-items-center mt-4"
+                >
+                  <button class="btn-17 mb-5" data-bs-dismiss="modal">
+                    <span class="text-container">
+                      <span class="text">Submit</span>
+                    </span>
+                  </button>
+                  <button class="btn-17 mb-5 mx-3" data-bs-dismiss="modal">
+                    <span class="text-container">
+                      <span class="text">Close</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Optional: Place to the bottom of scripts -->
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-bg">
+        <div class="container">
+          <div>
+            <h2>AQUARIS.</h2>
+            <div class="row">
+              <div class="col-xl-12 text-center">
+                <p>
+                  Siamese fighting fish are endemic to the central plain of
+                  Thailand, where they were first domesticated at least 1,000
+                  years ago, among the longest of any fish.[6][7][8] They were
+                  initially bred for aggression and subject to gambling matches
+                  akin to cockfighting Siamese fighting fish are endemic to the
+                  central plain of Thailand, where they were first domesticated
+                  at least 1,000 years ago, among the longest of any
+                  fish.[6][7][8] They were initially bred for aggression and
+                  subject to gambling matches akin to cockfighting.
+                </p>
+              </div>
+            </div>
+            <div
+              class="main pt-5 d-flex justify-content-center align-items-center"
+            >
+              <div class="up">
+                <button class="card1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0,0,256,256"
+                    width="30px"
+                    height="30px"
+                    fill-rule="nonzero"
+                    class="instagram"
+                  >
+                    <g
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(8,8)">
+                        <path
+                          d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <a
+                  href="https://www.linkedin.com/in/razin-ahmed-a365a5255/"
+                  target="_blank"
+                >
+                  <button class="card2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="50px"
+                      height="50px"
+                      class="twitter"
+                    >
+                      <path
+                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                      ></path>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              <div class="down">
+                <button class="card3">
+                  <a href="https://github.com/Razinahmed09" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 30 30"
+                      width="30px"
+                      height="30px"
+                      class="github"
+                    >
+                      <path
+                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                      ></path>
+                    </svg>
+                  </a>
+                </button>
+                <button class="card4">
+                  <svg
+                    height="30px"
+                    width="30px"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="discord"
+                  >
+                    <path
+                      d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex align-items-center justify-content-between">
+              Copyright @2023 Aquaris
+              <div>Contact No +92112560696</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <!-- <script>
     AOS.init();
   </script> -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
-    
-  
-</body>
-
+  </body>
 </html>
